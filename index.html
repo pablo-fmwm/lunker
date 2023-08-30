@@ -20,10 +20,10 @@
 
 </head>
 <style>
-    .grid-gallery {
+.grid-gallery {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px; /* Espacio entre las imágenes */
+    grid-template-columns: 1fr;
+    gap: 20px;
 }
 
 .grid-item {
@@ -42,31 +42,17 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.7); /* Transparencia negra */
+    background: rgba(0, 0, 0, 0.7);
     color: white;
     padding: 10px;
-    transform: translateY(100%);
-    transition: transform 0.3s ease;
+    /* Se eliminó la transformación */
 }
 
-.grid-item:hover img {
-    transform: scale(1.1); /* Efecto zoom al hacer hover */
-}
+/* Se eliminaron los efectos de hover */
 
-.grid-item:hover .description {
-    transform: translateY(0);
-}
-/* Estilos base (para dispositivos móviles) */
-.grid-gallery {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
-}
-
-/* Estilos para pantallas más grandes (tablets, desktops, etc.) */
 @media (min-width: 768px) {
     .grid-gallery {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 </style>
@@ -405,48 +391,6 @@
                 <h2>Portafolio de Proyectos.</h2>
                 <div class="grid-gallery">
                     <div class="grid-item">
-                        <img src="assets/img/Proyecto_Escalon.jpg" alt="">
-                        <div class="description">
-                            <h3 style="margin-bottom: 0px;">Escalón 4420</h3>
-                            <h6>Proyecto Comercial</h6>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <img src="assets/img/Proyecto_Beethoven.jpg" alt="">
-                        <div class="description">
-                            <h3 style="margin-bottom: 0px;">Beethoven</h3>
-                            <h6>Proyecto Comercial</h6>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <img src="assets/img/Proyecto_Escalon13.jpg" alt="">
-                        <div class="description">
-                            <h3 style="margin-bottom: 0px;">Escalón 13</h3>
-                            <h6>Proyecto Comercial</h6>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <img src="assets/img/Proyecto_LaVentana.jpg" alt="">
-                        <div class="description">
-                            <h3 style="margin-bottom: 0px;">La Ventana</h3>
-                            <h6>Proyecto Comercial</h6>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <img src="assets/img/Proyecto_Latid.jpg" alt="">
-                        <div class="description">
-                            <h3 style="margin-bottom: 0px;">Quattro</h3>
-                            <h6>Proyecto Comercial</h6>
-                        </div>
-                    </div>
-                    <div class="grid-item">
-                        <img src="assets/img/Proyecto_Horizontes.jpg" alt="">
-                        <div class="description">
-                            <h3 style="margin-bottom: 0px;">Horizontes 4055</h3>
-                            <h6>Proyecto Comercial</h6>
-                        </div>
-                    </div>
-                    <div class="grid-item">
                         <img src="assets/img/Proyecto_SmartLiving.jpg" alt="">
                         <div class="description">
                             <h3 style="margin-bottom: 0px;">Smart Living</h3>
@@ -500,6 +444,48 @@
                             <div class="description">
                             <h3 style="margin-bottom: 0px;">Centro de Distribución</h3>
                             <h6>Zona Franca Internacional</h6>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/img/Proyecto_Escalon.jpg" alt="">
+                        <div class="description">
+                            <h3 style="margin-bottom: 0px;">Escalón 4420</h3>
+                            <h6>Proyecto Comercial</h6>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/img/Proyecto_Beethoven.jpg" alt="">
+                        <div class="description">
+                            <h3 style="margin-bottom: 0px;">Beethoven</h3>
+                            <h6>Proyecto Comercial</h6>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/img/Proyecto_Escalon13.jpg" alt="">
+                        <div class="description">
+                            <h3 style="margin-bottom: 0px;">Escalón 13</h3>
+                            <h6>Proyecto Comercial</h6>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/img/Proyecto_LaVentana.jpg" alt="">
+                        <div class="description">
+                            <h3 style="margin-bottom: 0px;">La Ventana</h3>
+                            <h6>Proyecto Comercial</h6>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/img/Proyecto_Latid.jpg" alt="">
+                        <div class="description">
+                            <h3 style="margin-bottom: 0px;">Quattro</h3>
+                            <h6>Proyecto Comercial</h6>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="assets/img/Proyecto_Horizontes.jpg" alt="">
+                        <div class="description">
+                            <h3 style="margin-bottom: 0px;">Horizontes 4055</h3>
+                            <h6>Proyecto Comercial</h6>
                         </div>
                     </div>
                 </div>
